@@ -6,8 +6,8 @@ class Scheduler:
         # use constants
         if cid == 'ess':
             return {
-                "default": 1,
-                "packetCapture": 2
+                "default": 3,
+                "packetCapture": -1
             }
         return {
             "default": -1,
@@ -42,7 +42,7 @@ class Scheduler:
         for job in job_list:
             if job['status'] == "Processing":
                 continue
-            if job['jobType']  in userConfig and job['jobType'] not in allowedCnt:
+            if job['jobType'] in userConfig and job['jobType'] not in allowedCnt:
                 allowedCnt[job['jobType']] = 0
 
             if job['jobType'] == "upgrade" or job['jobType'] == "Bulk_upgrade":
@@ -61,7 +61,7 @@ class Scheduler:
                     allowedCnt["defaultCount"] += 1
                     valid_jobs_list.append(job['jobId'])
             else:
-                if allowedCnt[job['jobType']] < userConfig[job['jobType']]:
+                if allowedCnt[job['jobType']] < userConfig[job['jobType']] or userConfig[job['jobType']] == -1:
                     valid_jobs_list.append(job['jobId'])
                     allowedCnt[job['jobType']] += 1
         print(allowedCnt)
