@@ -32,9 +32,8 @@ def test_packet_capture_for_pro():
 
     # Assertion
     assert test_case_5 == testCaseJSON["testCase5_output5"]
-'''
-
-
+    
+    
 # TODO : Add the test cases for some non exsisting cases
 
 def test_packet_capture_for_no_limit():
@@ -44,3 +43,21 @@ def test_packet_capture_for_no_limit():
     # Assertion
     assert test_case_1 == non_exist_test["testCase1_output1"]
     assert test_case_2 == non_exist_test["testCase2_output2"]
+    
+'''
+
+
+
+
+# TODO : add the test case for the comined configuration
+
+def test_combo_config():
+    pktCap = Scheduler(1)
+    test_case_bulk_1 = pktCap.filter_allowed_custom_job_ids_to_run('ess', non_exist_test["testCase3_bulk"])
+
+    # Assertion
+    assert test_case_bulk_1 == non_exist_test["testCase3_bulk_output3"]
+
+
+
+

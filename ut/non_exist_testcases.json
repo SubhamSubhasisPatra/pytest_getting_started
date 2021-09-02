@@ -105,5 +105,58 @@
                         "d56fee98-9e06-44e1-a17d-packetCapture5",
                         "325212ef-d4ae-4524-a792-upgrade2",
                         "325212ef-d4ae-4524-a792-packetCapture1",
-  "325212ef-d4ae-4524-a792-packetCapture2","325212ef-d4ae-4524-a792-packetCapture3"]
+  "325212ef-d4ae-4524-a792-packetCapture2","325212ef-d4ae-4524-a792-packetCapture3"],
+  "testCase3_bulk": [
+    {
+      "jobId": "325212ef-d4ae-4524-a792-ONBOARDING_CONFIG1",
+      "jobType": "ONBOARDING_CONFIG",
+      "payload": {
+        "eType": ""
+      },
+      "status": "Created"
+    },
+    {
+      "jobId": "325212ef-d4ae-4524-a792-ONBOARDING_CONFIG2",
+      "jobType": "ONBOARDING_CONFIG",
+      "payload": {
+        "eType": ""
+      },
+      "status": "Created"
+    },
+    {
+      "jobId": "325212ef-d4ae-4524-a792-ONBOARDING_UPGRADE3",
+      "jobType": "ONBOARDING_UPGRADE",
+      "payload": {
+        "eType": ""
+      },
+      "status": "Created"
+    },
+    {
+      "jobId": "325212ef-d4ae-4524-a792-ONBOARDING_UPGRADE4",
+      "jobType": "ONBOARDING_UPGRADE",
+      "payload": {
+        "eType": ""
+      },
+      "status": "Created"
+    },
+    {
+      "jobId": "d56fee98-9e06-44e1-a17d-ONBOARDING_UPGRADE1",
+      "jobType": "ONBOARDING_UPGRADE",
+      "payload": {
+        "eType": ""
+      },
+      "status": "Processing"
+    },
+    {
+      "jobId": "d56fee98-9e06-44e1-a17d-ONBOARDING_UPGRADE2",
+      "jobType": "ONBOARDING_UPGRADE",
+      "payload": {
+        "eType": ""
+      },
+      "status": "Processing"
+    }
+  ],
+  "testCase3_bulk_output3" : ["d56fee98-9e06-44e1-a17d-ONBOARDING_UPGRADE1",
+  "d56fee98-9e06-44e1-a17d-ONBOARDING_UPGRADE2","325212ef-d4ae-4524-a792-ONBOARDING_CONFIG1",
+  "325212ef-d4ae-4524-a792-ONBOARDING_CONFIG2","325212ef-d4ae-4524-a792-ONBOARDING_UPGRADE3"]
 }
